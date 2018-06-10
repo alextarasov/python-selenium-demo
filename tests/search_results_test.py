@@ -18,6 +18,7 @@ class SearchResultsTest(unittest.TestCase):
         search_results_page = self.google_home_page.search_element("Selenium")
         result = search_results_page.is_text_present_on_google_page(expected_text)
         self.assertTrue(result, "Link with text '" + expected_text + "' was not found")
+        
     def test_github_api_documentation_contain_python(self):
         link_text = "GitHub - SeleniumHQ/selenium: A browser automation framework and ..."
         error_message = "Link with text 'Python' was not found"
